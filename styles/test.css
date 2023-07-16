@@ -31,7 +31,7 @@ header {
     list-style: none;
     margin-left: 70px;
     color: #424242;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 500;
 }
 
@@ -67,12 +67,16 @@ a {
 
 .primary-btn {
     margin-top: 20px;
-    width: 150px;
-    height: 45px;
+    width: 148px;
+    height: 44px;
     font-size: 1.1rem;
     border-radius: 8px;
     background: #FF900E;
     border: none;
+}
+.primary-btn:hover {
+    border-radius: 5px;
+    background: #727272;;
 }
 
 .banner-img {
@@ -135,12 +139,12 @@ main {
     margin-left: 20px;
 }
 
-.fact-title {
+.fact-title, .sponsor-title {
     font-size: 1.8rem;
     margin-top: 3rem;
 }
 
-.fact-description {
+.fact-description{
     text-align: left;
     margin-top: -2rem;
 }
@@ -178,6 +182,42 @@ main {
 }
 
 
+.Sponspors{
+    margin: 0px auto;
+    text-align: center;
+    margin-top: 7rem;
+}
+
+.sponsors-description {
+    text-align: center;
+    margin-top: -2rem;
+}
+
+.sopnsor-pic-container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 4rem;
+}
+.sopnsor-pic-container img{
+    height: 65%;
+    width: 50%;
+}
+
+footer {
+    max-width: 1400px;
+    margin: 9rem auto;
+    height: 50px;
+}
+
+.ftr{
+    max-width: 1600px;
+    background-color: rgba(255, 144, 14, 0.10);
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .5rem;
+}
 
 
 
@@ -240,6 +280,20 @@ main {
         flex-direction: column-reverse;
         gap: 1rem;
     }
+    .sponsor-title {
+        font-size: 1.7rem;
+        margin-top: -5rem;
+    }
+    .sopnsor-pic-container{
+        margin-top: 2rem;
+    }
+    .footer-info{
+        font-size: .6rem;
+    }
+    footer {
+        margin: 2rem auto 2rem auto;
+    }
+
 }
 
 
@@ -250,24 +304,20 @@ main {
         padding: 10px 10px;
         height: 1100px;
     }
-
     .nav {
         flex-direction: column;
         margin-top: 20px;
     }
-
     .nav li {
         margin-left: 20px;
         padding-right: 25px;
         font-size: 1.8rem;
         font-weight: 500;
     }
-
     .feature-container {
         flex-direction: column-reverse;
         margin-top: -10px;
     }
-
     .feature-content {
         padding: 0px 55px;
         display: flex;
@@ -275,21 +325,17 @@ main {
         align-items: center;
         justify-content: center;
     }
-
     .feature-description {
         text-align: center;
         padding: 0px 30px;
     }
-
     .feature-image-section {
         margin-top: 2.3rem;
     }
-
     .feature-title {
         font-size: 2.2rem;
         font-weight: 700;
     }
-
     .fact{
         margin: 0 auto;
     }
@@ -315,7 +361,6 @@ main {
         padding: 10px 10px;
         height: 1290px;
     }
-
     .feature-container {
         display: flex;
         align-items: center;
