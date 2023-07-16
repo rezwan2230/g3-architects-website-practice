@@ -7,7 +7,7 @@
 header {
     padding: 50px 240px;
     background-color: rgba(255, 144, 14, 0.10);
-    height: 1450px;
+    height: 1250px;
 }
 
 .nav {
@@ -54,7 +54,7 @@ a {
     margin-top: 80px;
 }
 
-.banner-description {
+.text-light-gray {
     max-width: 864px;
     margin: 0px auto;
     color: #727272;
@@ -81,12 +81,60 @@ a {
     border-radius: 8px;
 }
 
+main {
+    max-width: 1340px;
+    margin: 0px auto;
+}
+
+.feature-container {
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+
+}
+
+.feature-content {
+    padding: 0px 70px;
+}
+
+.feature-title{
+    font-size: 2.9rem;
+    font-weight: 700;
+}
+
+.feature-title .quick {
+    color: #727272;
+    font-weight: 500;
+}
+
+.feature-title .our {
+    color: #131313;
+}
+.feature-title .feature{
+    color: #FF900E;
+}
+
+.feature-description{
+    margin-top: -25px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+
+.feature-image-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-left: 1rem;
+}
+
 
 @media screen and (max-width: 576px) {
     .header {
         padding: 0px 0px;
+        height: 830px;
     }
-    .nav{
+    .nav {
         flex-direction: column;
     }
     .nav>ul {
@@ -101,11 +149,29 @@ a {
         font-size: 2.7rem;
         margin-top: 30px;
     }
-
-    
+    .feature-container {
+        margin-top: 10px;
+        flex-direction: column-reverse;
+    }
+    .feature-image-section {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0.71rem;
+        margin-left: 0rem;
+        margin-top: 1.9rem;
+    }
+    .feature-content {
+        padding: 0px 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .feature-title,.feature-description{
+        text-align: center;
+    }
 }
 
-@media screen and (min-width: 577px) and (max-width:990px){
+
+@media screen and (min-width: 577px) and (max-width:990px) {
     .header {
         padding: 10px 10px;
     }
@@ -121,10 +187,12 @@ a {
     }
 }
 
-@media screen and (min-width: 991px) and (max-width:1435px){
+
+@media screen and (min-width: 991px) and (max-width:1435px) {
     .header {
         padding: 50px 100px;
     }
+
     .nav {
         margin-top: 20px;
     }
